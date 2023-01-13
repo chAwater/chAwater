@@ -31,7 +31,8 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Shanghai
-          config_padding: 3%
+          config_padding: 1%, 10+5%
+          output_action: none
           
       - name: extra-metrics
         uses: lowlighter/metrics@latest
@@ -56,4 +57,16 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
-          config_padding: 3%
+          config_padding: 1%, 10+5%
+          output_action: none
+      
+      - name: update-commit
+        run: |
+          set +e
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          sudo mv /metrics_renders/* ./
+          git add --all
+          git commit -m "chore: push metrics"
+          git push
+
