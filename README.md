@@ -3,4 +3,12 @@ chAwater/chAwater is a ✨ special ✨ repository because its `README.md` (this 
 You can click the Preview link to take a look at your changes.
 --->
 
-![Metrics](/github-metrics.svg)
+<table>
+    <tbody>
+        <tr>
+            <td><img align="center" src="/metrics.base.svg" alt="base"></td>
+            <td><img align="center" src="/metrics.extra.svg" alt="extra"></td>
+        </tr>
+    </tbody>
+</table>
+
