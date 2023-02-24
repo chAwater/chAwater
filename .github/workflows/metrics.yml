@@ -72,6 +72,7 @@ jobs:
           sudo mv /metrics_renders/* ./
           git add --all
           git commit -m "[bot] chore: push metrics
+          
           Co-authored-by: hoho2b <38067903+chAwater@users.noreply.github.com>"
           git push
 
