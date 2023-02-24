@@ -71,6 +71,7 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           sudo mv /metrics_renders/* ./
           git add --all
-          git commit -m "[bot] chore: push metrics"
+          git commit -m "[bot] chore: push metrics
+          Co-authored-by: hoho2b <38067903+chAwater@users.noreply.github.com>"
           git push
 
