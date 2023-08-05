@@ -48,7 +48,7 @@ jobs:
           output_action: none
           
       - name: Get extra-metrics
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           # Options
