@@ -48,7 +48,10 @@ jobs:
           output_action: none
           
       - name: Get extra-metrics
-        uses: lowlighter/metrics@master
+        # uses: lowlighter/metrics@master
+        # https://github.blog/changelog/2024-05-23-sunset-notice-projects-classic/#rest-api-timeline
+        # https://github.com/lowlighter/metrics/issues/1706
+        uses: stalomeow/metrics@projects-v2  
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           # Options
